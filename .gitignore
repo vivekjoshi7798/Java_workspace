@@ -1,69 +1,39 @@
-# Java compiled files
-*.class
-
-# Package files
-*.jar
-*.war
-*.ear
-*.nar
-*.zip
-*.tar.gz
-*.rar
-
-# If you want to keep specific vendor jars (e.g. ojdbc8.jar used in this repo), un-ignore them below:
-!DBConnection/ojdbc8.jar
-
-# Maven
 target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
 
-# Gradle
-.gradle/
-build/
-
-# IntelliJ IDEA
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
 *.iml
-.idea/
-out/
-.idea_modules/
+*.ipr
 
-# Eclipse
+### Eclipse ###
+.apt_generated
 .classpath
+.factorypath
 .project
-.settings/
+.settings
+.springBeans
+.sts4-cache
 
-# VS Code
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
 .vscode/
 
-# Logs
-*.log
-
-# Temporary files
-tmp/
-temp/
-*.swp
-*~
-
-# OS generated files
+### Mac OS ###
 .DS_Store
-Thumbs.db
-Desktop.ini
-
-# Coverage and reports
-coverage/
-jacoco.exec
-
-# Database
-*.db
-
-# Others
-*.class
-
-# End of .gitignore
