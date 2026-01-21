@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AnonimusClass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BasicFactoryMethod" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FactoryMethodFileOPS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java9FactoryMethod" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SafeArgMethods" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TryWithResourse" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/annonimusClassIterator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/anonimusInnerClass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/privateMethodBAsic" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

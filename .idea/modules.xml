@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Collections/Collections.iml" filepath="$PROJECT_DIR$/Collections/Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hackerank/Hackerank.iml" filepath="$PROJECT_DIR$/Hackerank/Hackerank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java9/Java9.iml" filepath="$PROJECT_DIR$/Java9/Java9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_workspace.iml" filepath="$PROJECT_DIR$/Java_workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/MultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreading/MultiThreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java9/ProcessApi/ProcessApi.iml" filepath="$PROJECT_DIR$/Java9/ProcessApi/ProcessApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Streams/Streams.iml" filepath="$PROJECT_DIR$/Streams/Streams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/Synchronised_Thread/Synchronised_Thread.iml" filepath="$PROJECT_DIR$/MultiThreading/Synchronised_Thread/Synchronised_Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/Thread_communication/Thread_communication.iml" filepath="$PROJECT_DIR$/MultiThreading/Thread_communication/Thread_communication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/Thread_methods/Thread_methods.iml" filepath="$PROJECT_DIR$/MultiThreading/Thread_methods/Thread_methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/Thread_methods/Yeild/Yeild.iml" filepath="$PROJECT_DIR$/MultiThreading/Thread_methods/Yeild/Yeild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JLINK_CODE/basic/src/demoModule/demoModule.iml" filepath="$PROJECT_DIR$/JLINK_CODE/basic/src/demoModule/demoModule.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,69 @@
+# Java compiled files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# If you want to keep specific vendor jars (e.g. ojdbc8.jar used in this repo), un-ignore them below:
+!DBConnection/ojdbc8.jar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+out/
+.idea_modules/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Coverage and reports
+coverage/
+jacoco.exec
+
+# Database
+*.db
+
+# Others
+*.class
+
+# End of .gitignore
