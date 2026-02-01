@@ -416,3 +416,17 @@ Output: winner: none, loser: e
 	https://www.geeksforgeeks.org/java-program-for-stock-buy-sell-to-maximize-profit/
 
 
+Find the missing number in a sorted array containing numbers from 1 to N
+
+
+ https://leetcode.com/problems/missing-number/description/
+
+ https://leetcode.com/problems/valid-anagram/
+
+sort and check equals Or compare frequency of each character in both string
+
+
+Given an array with name and score get the highest average score from the array.
+Example:
+Input: [["Charles", 87],["Bobby", 100],["Charles", 54], ["Steve", 78]]
+Output: Bobby > 100
