@@ -340,5 +340,13 @@ public class EmployeeSorting {
 
         System.out.println("\n Promotion Eligibility Rule\n :");
         System.out.println(promotionEligibleTopPerformerPerDept);
+
+//        6.
+        System.out.println("\n Sort a list of employees by salary using Stream API. \n :");
+        employees.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).forEach(System.out::println);
+
+
+
     }
 }
+

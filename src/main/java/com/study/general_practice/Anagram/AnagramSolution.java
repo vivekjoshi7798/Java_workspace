@@ -1,4 +1,4 @@
-package com.study.genral_ractice.Anagram;
+package com.study.general_practice.Anagram;
 
 
 import java.util.*;

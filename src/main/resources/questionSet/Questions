@@ -1,24 +1,16 @@
------------------------------------------------------------------------------------------------------------------------------------
-str = aabbccdeefff
-occurence
-winner = f and losser: d
+src/main/java/com/study/java8/number/groupbyRange/Solution.java
 
-str= aabbcc
-winner = none and looser: none
+Q12) Given an array of integers (2, 34, 54, 23, 33, 20, 59, 11, 19, 37 ) group the numbers by the range they belong to. The put put should be {0=[2], 50=[54,59], 20=[23,20], 10=[11,19], 30=[34,33,37]}
 
-str=aaabbcc
-winner = a and looser: none
+Solution is:
+Map<Integer, List<Integer>> map = 
+ Stream.of(2, 34, 54, 23, 33, 20, 59, 11, 19,37).collect(Collectors.groupingBy (i -> i/10 * 10 )); 
+                System.out.println(map);
+
+
+
 -----------------------------------------------------------------------------------------------------------------------------------
-Increment the large integer by one and return the resulting array of digits.
-ex: Input: digits = [1, 2, 3]
-Output: [1, 2, 4]
-Input: digits = [4, 3, 2, 1]
-Output: [4, 3, 2, 2]
-Input: digits = [9]
-Output: [1, 0]
-Input: digits = [9, 9, 9]
-Output: [1, 0, 0, 0]
---------------------------------------------------------------------------
+5. Join all elements of a list with a comma using Stream API.
 
 1) Remove duplicates from string and return in same order".
 
@@ -29,6 +21,11 @@ s.chars().distinct().mapToObj( c-> (char)  c ).forEach(System.out::println);
 
 Arrays.stream(s.split("")).distinct().forEach(System.out::print);
 
+src/main/java/com/study/java8/number/stringoperations/StringStreamPractice.java
+
+
+--------------------------------------------------------------------------
+src/main/java/com/study/java8/number/stringoperations/SentenceOperation.java
 
 2)  Given a sentence find the word that has the highest length. The solution is:
 
@@ -50,6 +47,8 @@ This question asked in SNP. They will tweak the same question with list of Emplo
 
 Q4) Find the length of the longest word
 
+
+Find the longest string from a list using Stream API.
 Solution : Arrays.stream(s.split(" ")).mapToInt(l -> l.length()).max().getAsInt();
 
 Q5). Find the 2nd highest length word in the given sentence
@@ -66,15 +65,20 @@ String input = "the quick brown fox jumps right over the little lazy dog little"
                            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
             System.out.println(collect);
 
-Q7) Given a word, find the occurrence of Each Character
-
-Q8) There is a list of Employees and Employee object has a field called e-mail. Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain.
 
 Q9) Given a string, find the words with the maximum number of vowels.
 
        "The quick brown fox jumps right over the little lazy dog."
         Maximum Number of Vowels: 2
         output Words: quick, over, little  ( because each word has maximum of 2 vowels)
+------------------------------------------------------------------------------------
+C:\Users\VivekJoshi\OneDrive - EPAM\Documents\java\Java_workspace\src\main\java\com\study\java8\number\stringoperations\StringStreamPractice.java
+
+Q7) Given a word, find the occurrence of Each Character
+
+
+
+Q8) There is a list of Employees and Employee object has a field called e-mail. Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain.
 
 
 
@@ -146,15 +150,6 @@ Solutions:
         List<Integer> evens = partitions.get(true);
         List<Integer> odds = partitions.get(false);
 The entryset logic in solution 1 and 2 is to process the map. and also please know the difference between partitionBy and groupBy and when to use.
-
-
-
-Q12) Given an array of integers (2, 34, 54, 23, 33, 20, 59, 11, 19, 37 ) group the numbers by the range they belong to. The put put should be {0=[2], 50=[54,59], 20=[23,20], 10=[11,19], 30=[34,33,37]}
-
-Solution is:
-Map<Integer, List<Integer>> map = 
- Stream.of(2, 34, 54, 23, 33, 20, 59, 11, 19,37).collect(Collectors.groupingBy (i -> i/10 * 10 )); 
-                System.out.println(map);
 
 
 Q13) Given a List of Strings  ["as", "123", "32", "2as"], create another Integer list that contains only integers. The output shoul be: List<Integer> iList = [123,32]
@@ -430,3 +425,41 @@ Given an array with name and score get the highest average score from the array.
 Example:
 Input: [["Charles", 87],["Bobby", 100],["Charles", 54], ["Steve", 78]]
 Output: Bobby > 100
+
+
+str = aabbccdeefff
+occurence
+winner = f and losser: d
+
+str= aabbcc
+winner = none and looser: none
+
+str=aaabbcc
+winner = a and looser: none
+-----------------------------------------------------------------------------------------------------------------------------------
+Increment the large integer by one and return the resulting array of digits.
+ex: Input: digits = [1, 2, 3]
+Output: [1, 2, 4]
+Input: digits = [4, 3, 2, 1]
+Output: [4, 3, 2, 2]
+Input: digits = [9]
+Output: [1, 0]
+Input: digits = [9, 9, 9]
+Output: [1, 0, 0, 0]
+--------------------------------------------------------------------------
+src/main/java/com/study/java8/stringoperations/CharOperation.java
+C:\Users\VivekJoshi\OneDrive - EPAM\Documents\java\Java_workspace\src\main\java\com\study\java8\stringoperations\charOps\FirstRepeatingChar.java
+9. Task: Find the first repeating character in the word 'developer' using Java 8 stream APIs.
+10. Task: Find the first non repeating character in the word 'developer' using Java 8 stream APIs.
+--------------------------------------------------------------------------
+src/main/java/com/study/java8/number
+7. Get all even numbers from a list using Stream API.
+3. Find out the prime numbers using Stream API.
+4. Given the list of numbers between 1 to 50, write code to find out the prime numbers using Stream API.
+
+--------------------------------------------------------------------------
+
+
+
+
+

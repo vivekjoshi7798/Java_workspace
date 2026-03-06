@@ -88,6 +88,10 @@ public class Solution {
                 new Student(14, "Nina", 114, "C", 79.0)
         );
 
+//        4. How would you use Streams API to count students in each department from a list of student objects?
+        Map<String, List<Student>> data=students.stream().collect(Collectors.groupingBy(Student::getDivision,Collectors.toList()));
+        System.out.println(data);
+
         List<Student> top3HighestPercentageStudents= students.stream().sorted(Comparator.comparingDouble(Student::getPercentage).reversed()).limit(3).toList();
         System.out.println("Top 3 highest percentage students:");
         System.out.println(top3HighestPercentageStudents);

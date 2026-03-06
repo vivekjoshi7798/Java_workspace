@@ -1,22 +1,23 @@
-package com.study.java8.number.stringoperations;
+package com.study.java8.stringoperations;
 
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import static java.util.Map.Entry.comparingByValue;
 
 public class StringStreamPractice {
 
     public static void main(String[] args) {
-        System.out.println("1 longest string from a list : " + findLongestString(List.of("longest", "string", "from", "a", "list")));
+
 
         System.out.println("1 Count vowels: " + countVowels("Education"));
-        System.out.println("2 Remove duplicates: " + removeDuplicateChars("programming"));
-        System.out.println("3 First non-repeating char: " + firstNonRepeatingChar("aabbcddex"));
         System.out.println("4 Reverse each word: " + reverseEachWord("Java Stream API"));
         System.out.println("5 Uppercase sorted chars: " + sortUppercase("developer"));
 
-        System.out.println("6 Char frequency: " + charFrequency("banana"));
+
         System.out.println("7 Longest word: " + longestWord("Java streams are very powerful"));
         System.out.println("8 Words starting with vowel: " + wordsStartingWithVowel("Apple is orange and umbrella"));
         System.out.println("9 Are anagrams: " + areAnagrams("listen", "silent"));
@@ -35,6 +36,7 @@ public class StringStreamPractice {
         System.out.println("20 Rotate string: " + rotateString("HELLO"));
     }
 
+
     public static void printList(List<String> list) {
         String name = new String("vivekjoshi");
         List<Integer> location = IntStream.range(0, name.length())
@@ -42,24 +44,19 @@ public class StringStreamPractice {
         System.out.println(location);
     }
 
-    private static String findLongestString(List<String> longest) {
-        return longest.stream().max(Comparator.comparingInt(String::length)).orElse(null);
-    }
 
     // 1
     static long countVowels(String str) {
-        return str.toLowerCase().chars().filter(s -> "qeiou".indexOf(s) != -1).count();
+        return str.toLowerCase().chars().filter(s -> "aeiou".indexOf(s) != -1).count();
     }
 
     // 2
-    static String removeDuplicateChars(String str) {
-        return null;
+    static String removeDuplicateChars(String input) {
+        return input.chars().mapToObj(s -> String.valueOf((char) s)).distinct().collect(Collectors.joining());
     }
 
     // 3
-    static Character firstNonRepeatingChar(String str) {
-        return null;
-    }
+
 
     // 4
     static String reverseEachWord(String str) {
@@ -72,9 +69,7 @@ public class StringStreamPractice {
     }
 
     // 6
-    static Map<Character, Long> charFrequency(String str) {
-        return null;
-    }
+
 
     // 7
     static String longestWord(String sentence) {
