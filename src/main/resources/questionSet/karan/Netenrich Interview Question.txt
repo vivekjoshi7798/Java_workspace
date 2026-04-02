@@ -1,9 +1,0 @@
-stored procedure
-@Enable Auto configuration
-@Spring Boot Application
-Why Spring boot
-DDL DML command in SQL 
-Functional Interface with Lampda Expresiion (Implementation)
-optional and how to hadle null pointer (Implemenation)
-NO SQL..?
-

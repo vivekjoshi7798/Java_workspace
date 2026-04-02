@@ -1,9 +1,0 @@
-sort a list without  using existing function use sorting algorithms
-
-Employee Table -- Id -- Name -- Salary -- Department id
-
-highest salary in each department
-
-Select * from Employee emp Max(emp.salary) 
-group by emp.salary, emp.department_id
-having (select emp.department_id from employee emp);

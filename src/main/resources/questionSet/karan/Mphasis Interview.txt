@@ -1,5 +1,0 @@
-Write a program to encode and decode an alphanumeric string , for each alphabet you get the 3rd letter and once you reach the end of alphabet series its counts again from first alphabet, and for numbers once you add 3 and if output is two digit encoding considers last digit – 
-
-Ex -   ab19z ->  de42c
-
-
