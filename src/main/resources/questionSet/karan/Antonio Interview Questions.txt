@@ -1,0 +1,13 @@
+1. Static
+2. @ qualifier
+2. depedeny Injection
+4. Polymorphism
+5.Autowiring
+6.Exception handling
+7. Latest feature of Java
+Authentication Authorisation
+Java 11
+Java 8
+Stream why we use
+Hashmap
+get List of Id of the List<Employee> using Stream

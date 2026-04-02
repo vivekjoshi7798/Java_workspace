@@ -1,0 +1,79 @@
+here is a Student class having the following
+-studentId int
+-studentName String
+-marks List<Integer>
+ 
+Perform the average of marks for that student and
+ if the student has scored > 60% the student will get a Pass grade
+ 
+ 
+ For eg. 1, "John", {75, 90, 66} 
+Output: John, Grade: Pass
+
+
+List<Student> StudentList
+
+
+public void checkAverageMarks(StudentList){
+
+	
+	for(Student std: StudentList){
+		id(std.getMarks()!=null){
+		
+			checkaverageAndprint(std.getMarks());
+		}
+	}
+
+}
+
+public void checkaverageAndprint(List<Integer> marks){
+
+	int length = marks.size();
+	int sum = 0;
+	for(Integer value: marks){
+		sum = sum + value;
+	}
+	
+	int avg = sum/length;
+	
+	if(avg>60){
+	system.out.println("Grage:"+"Pass");
+	}
+	else{
+	system.out.println("Grage:"+"Fail");
+	}
+
+}
+
+
+What will be the output
+String a = "";
+String b = null;
+System.out.println(a == b); 
+System.out.println(a.equals(b));
+
+
+
+Find the time complexity:
+1) for(i=1; i<=n; i=i*2)  O(long n)
+
+1
+2
+4
+8
+16
+
+
+2) for(i=1; i<=n; i=i+2)   O(n)
+
+1
+3
+5
+7
+
+
+
+
+
+
+

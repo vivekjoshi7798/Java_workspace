@@ -1,0 +1,18 @@
+Kafka
+
+what is consume broker
+on which architecuter kafaka is implemented
+how to handle if 2 consumer are accesing and making change in database together (answer using consumer group we will differnetiatte)
+what is consumer group
+what if a consumer is consumer out of 1-10 it only got 4 and then some issue happend and it restrted
+will it consume from 5 or from zero
+
+
+what is conccurent session
+what is session 
+what is seesion management
+Stored procedure
+Triggers
+Create index
+
+

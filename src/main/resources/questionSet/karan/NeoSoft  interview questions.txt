@@ -1,0 +1,43 @@
+@Entity
+@getters
+@setters
+@NoArgsConstructor
+@ArgsConstructor
+@Table (name = User_Table)
+class User {
+
+	@Id
+	@generateValue(STRATEGY = 
+	@Column(user_id)
+	String Id;
+	
+	@Column(user_name)
+	String name;
+
+
+}
+
+
+@Repository
+interface UserRepository extends CurdRepository <User, String>
+{
+
+	public User getUserById(String id);
+
+	public User getUserByName(String name);
+	
+
+
+}
+
+@Service
+class UserService implements UserRepository {
+
+	
+
+
+}
+
+Application gateway
+JWT
+cross platform Design pattern

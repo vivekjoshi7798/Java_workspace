@@ -1,0 +1,48 @@
+You are given a string representing a mathematical expression consisting of numbers (one, two) and operations (+, -). Your task is to evaluate this expression and return the result.
+
+Example:
+Input:
+"one+two+one-two"
+Output:
+2
+
+
+
+Problem: Given a table employees, retrieve the count of employees in each department.
+Table:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(50),
+    department_id INT
+);
+
+
+Select e2.department_id, count(e1.employee_id), 
+from Employee e1
+JOIN Employee e2 ON e1.department_id = e2.department_id
+group by e2.department_id, e1.employee_id;
+
+
+employee_id	employee_name	department_id
+1	John Doe	1
+2	Jane Smith	2
+3	Alice Jones	1
+4	Bob Brown	3
+5	Charlie Black	2
+Executing the above query would yield:
+
+department_id	employee_count
+1	2
+2	2
+3	1
+
+
+Write a method to find the intersection of two arrays.
+Example: For the arrays [1, 2, 2, 1] and [2, 2], the intersection is [2, 2].
+                       For the arrays [1, 2,2,2, 1] and [2, 2], the intersection is [2].
+					   
+					   1:2
+					   2:3
+					   
+					   2:2
+					   

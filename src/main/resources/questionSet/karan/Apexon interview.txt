@@ -1,0 +1,24 @@
+String s = "abc def abc def ghi jkl mno jkl mno pqr pqr 
+pqr jkl stu vwx stu stu stu stu stu vwx vwx vwx vwx";
+
+word occured more number of times
+
+
+String str = "abc def abc def ghi jkl mno jkl mno pqr pqr 
+pqr jkl stu vwx stu stu stu stu stu vwx vwx vwx vwx";
+
+List<String> finalList = findDuplicate(str);
+
+for(String abc: finalList)
+{
+	System.out.println(abc+ " ");
+}
+
+public List<String> findDuplicate(String input){
+
+	List<String> finalList = new ArrayList<>();
+	
+	
+
+
+}

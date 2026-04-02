@@ -1,0 +1,20 @@
+1:- Lamda Expresion in java
+2:- What is bean in java not in Spring boot
+3:- what is Internal working of Set
+4:- Internal working of HashMap/HashSet
+5:- whatis Functional Interface
+6:- What is Put and Patch in Rest API methods
+7:- can we Update only one data in the Object like only EmployeedName If Yes, How and using which Rest API methods
+8:- what is Design Pattern in Java
+9:- what is Default Methods in Java
+10:- what is application Gateway (API Gateway in Microservice);
+11:- Stream API working how to extract List<String> of Employee Name
+12:- Feature of Java 11
+13:- Feature of Java 8
+14:- Microservices question
+15:- difference between vector and Araylist?
+16:- internal working of Stream Filter.?
+17:-  if i have 3 Microservces Appliction running like payment gateway, showing data on screen, how many API we need to pass to Angular
+18:- what is :: operator in Java.?
+
+

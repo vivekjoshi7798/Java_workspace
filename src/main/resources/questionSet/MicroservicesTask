@@ -1,0 +1,38 @@
+Write Code which will helps us to understand @Transactional  management in microservices using Spring Boot and JPA.
+-try to understand declarative transaction management using @Transactional annotation.
+-try to implement programmatic transaction management using TransactionTemplate.
+
+
+Implement a Sprint boot application that demonstrates both declarative and programmatic way of handling propagation.
+
+
+Implement a Spring Boot application that demonstrates the use of @Async annotation for asynchronous processing between two microservices, Service A and Service B.
+-Service A should have an endpoint that triggers an asynchronous call to Service B.
+-Service B should process the request and return a response to Service A.
+-Use @Async annotation in Service A to handle the call to Service B asynchronously.
+-Ensure proper configuration of Async support in Spring Boot application.
+-Use RestTemplate or WebClient to make the call from Service A to Service B.
+-Handle exceptions and timeouts appropriately in the asynchronous call.
+-Write unit tests to verify the asynchronous behavior and correct response handling between the two services.
+-Document the code with comments explaining the use of @Async and the flow of asynchronous processing between the two microservices.
+
+
+Implement a custom interceptor in Spring Boot that logs the details of incoming HTTP requests and outgoing HTTP responses for a RESTful web service.
+-The interceptor should log the HTTP method, URL, headers, and body of incoming requests.
+-It should also log the status code, headers, and body of outgoing responses.
+-Configure the interceptor to apply to all endpoints in the RESTful web service.
+-Ensure that sensitive information (like passwords or tokens) is not logged.
+-Write unit tests to verify that the interceptor correctly logs the required information.
+-Document the code with comments explaining the functionality of the interceptor and how it is integrated into the
+-same assignment try with annotation based approach as well as implementing HandlerInterceptor interface.
+
+
+
+-create delete account api with soft delete functionality using Spring Boot and JPA.
+-Implement an endpoint that allows users to delete their accounts.
+-Instead of permanently deleting the user data from the database, implement soft delete functionality by adding a    "deleted" flag to the user entity.
+-When a user requests account deletion, set the "deleted" flag to true instead of removing the record from the database.
+-Ensure that all queries for user data exclude records where the "deleted" flag is set to true.
+-Write unit tests to verify that the soft delete functionality works as expected.
+-Document the code with comments explaining the soft delete implementation and its benefits.
+ 

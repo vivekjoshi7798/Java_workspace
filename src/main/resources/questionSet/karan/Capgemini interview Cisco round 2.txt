@@ -1,0 +1,16 @@
+String s = "My Name is Karan"
+
+List<Integer> abc = Arrays.asList(1,3,4,6,7,6,7,9);
+
+List<Integer> abc = abc.stream().filter(a->a%2!=0).collect(collectors.toList());
+
+
+Student
+
+name id  marks
+
+Select s1.id , s1.marks, s1.name 
+from Student s1
+join Student S2 On s1.id = s2.id
+where s1.marks > select Distict Marks from student orderby Marks 
+Limit 1 offset 1;

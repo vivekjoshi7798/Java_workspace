@@ -1,0 +1,14 @@
+String str = "Karan Kumar"
+
+Map<String,Long> countmap = Arrays.stream(str.split("")).collect(Collectors
+			.groupingBy(Function.getIdentity(), Collectors.counting()));
+			
+			
+String  = {}[]()
+check if the string is valid using Stack
+
+Qualifier
+Bean Scopes
+Default bean scope
+restcontroller vs controller
+how microservices can communicate
