@@ -1,0 +1,63 @@
+Employee
+
+empid
+name
+salary
+
+
+
+
+employeeList
+
+	Optional<Long> optionaldata = employeeList.stream().map(emp->emp.getSalary()).sorted(var1 , var2 () -> var2 - var1 ).skip(1).collect(Collectors.toList())
+
+if(optionaldata.isPresent())
+{
+	Long salary = optionaldata.get(0);
+	
+	List<Employee> finalList = employeeList.stream.filter(emp-> emp.getSalary.compare(salary)==0).collect(Collectors.toList());
+
+
+
+}
+
+String str = KaranKumar;
+
+String[] stringdata = str.split("");
+
+HashMap<String,Long> finalMap = new HashMap<>();
+
+finalMap = Arrays.stream(stringdata).collect(Collectors.groupby(Function.idendity(), Collectors.counting()));   K : 2 
+
+for(Map<String,Long> entryData : finalMap.getEntrySet()){
+
+	String key = entryData.getKey();
+	Long value = entryData.getValue();
+	
+	System.out.println("Key"+ key + " Value "+ value);
+
+}
+
+
+@RestController
+Class EmployeeController{
+
+
+	@getMapping("/getEmployeeList")
+	public ResponseEntity<List<Employee>> getEmployeeList(){
+	
+	List<Employee> finalList = getEmployeeList();
+	
+	return ResponseEntity.response(finalList, 200);
+	
+	}
+
+	@getMapping("/{empId}")
+	public ResponseEntity<User> getEmployeeById(@PathVariable Long empId){
+	
+	Employee emp = getEmployeeDetailsById(empId);
+	
+	
+	return ResponseEntity.response(emp, 200);
+	}
+}

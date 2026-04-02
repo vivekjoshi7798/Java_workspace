@@ -24,7 +24,7 @@ public class AnagramSolution {
             Arrays.sort(chars);
             //            2. approach to sort the word alphabetically
             //            String newWord=Arrays.stream(word.split("")).sorted(Comparator.naturalOrder()).collect(Collectors.joining());
-
+            newWord=new String(chars);
             if(anagrams.containsKey(newWord)){
                 List<String> newLIst= anagrams.get(newWord);
                 newLIst.add(newValue);

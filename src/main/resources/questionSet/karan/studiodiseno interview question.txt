@@ -1,0 +1,28 @@
+List<Integer> integerList = Arrays.asList(1,2,4,6,9,32,6,9,23,98,34);
+
+
+List<Integer> even = integerList.stream().filter(a->a%2 ==0).collect(collectors.toList());
+List<Integer> odd = integerList.stream().filter(a->a%2 !=0).collect(collectors.toList());
+
+
+add(int a, int b)
+
+
+
+
+
+(a,b)-> {
+	return a+b;
+
+};
+
+
+views 
+indexing
+normalization
+which data structure araylist internaly implement
+oops
+stack vs heap
+can spring boot have multiple database
+how to connect application to a database
+how to create a microservices

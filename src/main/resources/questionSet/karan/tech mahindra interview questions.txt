@@ -1,0 +1,21 @@
+class Employee{
+Integer id;
+String name;
+String city
+}
+ 
+List<Employee> employeeList;
+
+1. list of cities without duplicate
+
+List<String> distinctCities = employeeList.stream().map(Employee::city)
+				.distinct().collect(Collectors.toList()));
+				
+Employee firstId = employeeList.stream().filter(emp->emp.getid() == 1)
+						.findFirst().get();				
+						
+String text = "Hello JAVA WORLD"
+
+Arrays.stream(text.split(" ")).sorted(Comparator.reverseOrder()).foreach(str->{
+	System.out.print(str + " ");
+});						
